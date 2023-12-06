@@ -1,0 +1,62 @@
+  <div class="container">
+      <div class="box">box one</div>
+      <div class="box">box two</div>
+      <div class="box">box three</div>
+      <div class="box">box four</div>
+      <div class="box">box five</div>
+      <div class="box">box six</div>
+      <div class="box">box seven</div>
+    </div>
+
+body {
+  margin: 0;
+  padding: 0;
+  background: palegoldenrod;
+}
+.container {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.box {
+  width: auto;
+  text-align: center;
+  line-height: 200px;
+  flex-grow: 1;
+  transition: 0.5s;
+  font-size: 1.2rem;
+  color: #fff;
+  background: #333;
+}
+.box:hover {
+  flex-grow: 4;
+  font-size: 2rem;
+}
+.container .box:nth-child(1) {
+  background: #92278f;
+}
+.container .box:nth-child(2) {
+  background: #662d90;
+}
+.container .box:nth-child(3) {
+  background: #0f75bc;
+}
+
+.container .box:nth-child(4) {
+  background: #25aae1;
+}
+.container .box:nth-child(5) {
+  background: #13a89e;
+}
+
+.container .box:nth-child(6) {
+  background: #fcb040;
+}
+
+.container .box:nth-child(7) {
+  background: #fd7e90;
+}
